@@ -21,7 +21,7 @@ public class Server {
 
     //====================CONSTRUCTOR====================
     public Server(String name, int port) {
-        dbmanager = new DBManager("Database/db.bin");
+        dbmanager = new DBManager();
 
         this.name = name;
         this.port = port;
