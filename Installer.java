@@ -5,7 +5,7 @@ public class Installer {
 
     public static void main(String[] args) {
         try {
-            File databasefile = new File("src/Database/db.bin");
+            File databasefile = new File("Database/db.bin");
             databasefile.createNewFile();
             ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(databasefile));
             HashMap<String, String> logins = new HashMap<String, String>();
