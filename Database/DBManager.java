@@ -11,9 +11,9 @@ public class DBManager {
     HashMap<String, String> logins;
 
 
-    public DBManager(String path) {
+    public DBManager() {
         try {
-            File databasefile = new File(path);
+            File databasefile = new File("Database/db.bin");
             ObjectInputStream input = new ObjectInputStream(new FileInputStream(databasefile));
             logins = (HashMap<String, String>) input.readObject();
         } catch (IOException ex) {
